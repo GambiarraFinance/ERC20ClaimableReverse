@@ -3,8 +3,8 @@ module.exports = {
   token_amount: 1e27,
   // one day after now
   start_time: now + 86400,
-  // five days after start time
-  end_time: now + 86400 * 6,
+  // one year after start time
+  end_time: now + 86400 * 365,
   root_changed_encode: 'RootChanged(bytes32,bytes32)',
   root_changed_types: [
     { type: 'bytes32', name: 'previous' },

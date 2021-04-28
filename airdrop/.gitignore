@@ -6,3 +6,7 @@ test/generated.js
 #Hardhat files
 cache
 artifacts
+
+
+# Deploy Variables
+.env
