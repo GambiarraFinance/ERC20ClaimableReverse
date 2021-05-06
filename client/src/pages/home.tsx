@@ -45,17 +45,7 @@ export default function HomePage() {
                         align={'center'}
                         alignSelf={'center'}
                         position={'relative'}>
-                        <Button
-                            colorScheme={'green'}
-                            bg={'green.400'}
-                            rounded={'full'}
-                            px={6}
-                            _hover={{
-                                bg: 'green.500',
-                            }}>
-                            Verify
-                        </Button>
-                        <Link href="/claim">
+                        <Link href="/check">
                             <Button
                                 colorScheme={'green'}
                                 bg={'green.400'}
