@@ -1,6 +1,6 @@
-{
+export const proofData = [{
   "merkleRoot": "0x6badc1b0e597887ee42d611117171508ca948711a05ea7aa494d21c3ab5fe877",
-  "leaves": [
+  "leavesWithProof": [
     {
       "address": "0xB40A9830633E005c279175d458CECcD348fABe16",
       "proof": [
@@ -1390,4 +1390,4 @@
       "index": "99"
     }
   ]
-}
+}]

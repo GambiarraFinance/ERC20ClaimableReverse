@@ -7,7 +7,9 @@
   "scripts": {
     "pretest": "mocha",
     "test": "hardhat test:finally",
-    "test:real": "npm run pretest && REAL=true hardhat test:finally"
+    "test:real": "npm run pretest && REAL=true hardhat test:finally",
+    "deploy:ropsten": "hardhat run --network ropsten launch/deploy.js",
+    "deploy:mainnet": "hardhat run --network mainnet launch/deploy.js"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.3.0",

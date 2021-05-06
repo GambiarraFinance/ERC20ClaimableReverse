@@ -35,7 +35,7 @@ async function deployAirdropTest(creator,merkleRoot,start_time, end_time) {
     const GambAirdrop = await ethers.getContractFactory('Airdrop', creator);
     const TestTokenA = await ethers.getContractFactory('TestTokenA')
 
-    const amount_aidrop = 200000000000000000000000;
+    const amount_aidrop = 2558400000000000000000000;
     const amount = new BigNumber(amount_aidrop).toFixed();
     const testToken = await TestTokenA.deploy(amount);
     const airdrop = await GambAirdrop.deploy(
@@ -54,9 +54,9 @@ async function main() {
     const [deployer] = await ethers.getSigners();
     
     // // WARNING: only testnet 
-    // const airdrop = await deployAirdropTest(deployer, merkleRoot, START_TIME, END_TIME);
+    const airdrop = await deployAirdropTest(deployer, merkleRoot, START_TIME, END_TIME);
     
-    const airdrop = await deployAirdrop(deployer,YOUR_TOKEN_AIRDROP, merkleRoot, START_TIME, END_TIME);
+    // const airdrop = await deployAirdrop(deployer,YOUR_TOKEN_AIRDROP, merkleRoot, START_TIME, END_TIME);
 
     console.table({
         start: START_TIME,
