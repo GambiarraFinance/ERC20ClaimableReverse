@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { useRoutes } from 'hookrouter';
-
+import IpfsRouter from 'ipfs-react-router'
 
 import HomePage from './pages/home'
 import CheckPage from './pages/check'
@@ -26,10 +26,11 @@ export const App = () => {
   
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
+      
+    <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          {routeResult || <NotFoundPage /> }
+	  <IpfsRouter> {routeResult || <NotFoundPage /> } </IpfsRouter>
         </Grid>
       </Box>
     </ChakraProvider>

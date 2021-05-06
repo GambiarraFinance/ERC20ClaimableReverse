@@ -1,5 +1,6 @@
 {
   "name": "client",
+ "homepage": ".",
   "version": "0.1.0",
   "author": "codingsh<codingsh@pm.me>",
   "private": true,
@@ -37,6 +38,7 @@
     "ethers": "^5.0.30",
     "framer-motion": "^4.0.0",
     "hookrouter": "^1.2.5",
+    "ipfs-react-router": "^0.2.2",
     "next": "^10.2.0",
     "prop-types": "^15.7.2",
     "qr-image": "^3.2.0",
