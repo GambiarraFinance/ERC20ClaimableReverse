@@ -55,10 +55,10 @@
     "web3modal": "^1.9.3"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts  build",
-    "test": "react-scripts-ts test",
-    "eject": "react-scripts-ts eject"
+    "start": "craco start",
+    "build": "craco  build",
+    "test": "croco test",
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": "react-app"
