@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom'
+import IpfsRouter from 'ipfs-react-router'
 
 import {
   ChakraProvider,
@@ -7,30 +9,31 @@ import {
   theme,
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { useRoutes } from 'hookrouter';
-import IpfsRouter from 'ipfs-react-router'
 
 import HomePage from './pages/home'
 import CheckPage from './pages/check'
 import NotFoundPage from './pages/notFoundPage'
 
 
-const routes = {
-  '/': () => <HomePage />,
-  '/check': () => <CheckPage />,
-  '/404': () => <NotFoundPage />,
-};
-
 export const App = () => {
-  const routeResult = useRoutes(routes);
-  
   return (
     <ChakraProvider theme={theme}>
-      
     <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-	  <IpfsRouter> {routeResult || <NotFoundPage /> } </IpfsRouter>
+          <IpfsRouter>
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route path="/check">
+                <CheckPage />
+              </Route>
+              <Route path="*">
+                <NotFoundPage />
+              </Route>
+            </Switch>
+          </IpfsRouter>
         </Grid>
       </Box>
     </ChakraProvider>

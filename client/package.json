@@ -1,6 +1,6 @@
 {
   "name": "client",
- "homepage": ".",
+  "homepage": ".",
   "version": "0.1.0",
   "author": "codingsh<codingsh@pm.me>",
   "private": true,
