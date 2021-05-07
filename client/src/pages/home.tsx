@@ -1,6 +1,7 @@
 import React from 'react';
-
 import Head from 'next/head';
+import { Link as ReachLink } from "@reach/router"
+
 import {
     Box,
     Heading,
@@ -45,7 +46,7 @@ export default function HomePage() {
                         align={'center'}
                         alignSelf={'center'}
                         position={'relative'}>
-                        <Link href="/check">
+                        <Link as={ReachLink} to="/check">
                             <Button
                                 colorScheme={'green'}
                                 bg={'green.400'}
