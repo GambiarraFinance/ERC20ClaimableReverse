@@ -1,9 +1,9 @@
 ## ERC20 Claimable Reverse 
 
 #### Struct 
- - api-merkle
+ - [api-merkle](https://github.com/GambiarraFinance/api-merkle-airdrop)
  - client
- - client-uniswap 
+ - [client-uniswap](https://github.com/GambiarraFinance/airdrop-uniswap-interface) 
  - airdrop contract
 
 ## Aidrop Contracts 
