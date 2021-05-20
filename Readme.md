@@ -1,8 +1,10 @@
 ## ERC20 Claimable Reverse 
 
 #### Struct 
+ - api-merkle
  - client
- - aidrop 
+ - client-uniswap 
+ - airdrop contract
 
 ## Aidrop Contracts 
 
